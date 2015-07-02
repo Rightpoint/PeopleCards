@@ -1,0 +1,4 @@
+var pc = {
+    common: {},
+    viewModels: {}
+}

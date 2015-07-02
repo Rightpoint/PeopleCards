@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meet the New Hires</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <!-- http://nnattawat.github.io/flip/ -->
+    <script type="text/javascript" src="bower_components/flip/dist/jquery.flip.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="node_modules/knockout/build/output/knockout-latest.debug.js"></script>
+    <script type="text/javascript" src="js/pc.js"></script>
+    <script type="text/javascript" src="js/pc.common.js"></script>
+    <script type="text/javascript" src="js/pc.viewModels.js"></script>
+
+    <div class="container card-list">
+
+        <h1 class="header">New Hire Flashcards</h1>
+        <div class="row" data-bind="foreach: cards">
+            <div class="col-xs-12 col-sm-6 col-sm-4 col-md-3">
+                <div class="card">
+                    <div class="front">
+                        <img class="img-responsive" data-bind="attr: { src: photo }" alt="?" />
+                    </div>
+                    <div class="back">
+                        <h2 data-bind="text: name"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        ko.applyBindings(new pc.viewModels.CardList(), $('.card-list')[0]);
+    </script>
+</body>
+</html>
