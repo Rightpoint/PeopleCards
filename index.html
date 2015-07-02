@@ -20,8 +20,10 @@
     <div class="container card-list">
 
         <h1 class="header">New Hire Flashcards</h1>
+        <button class="btn btn-primary" data-bind="click: shuffleCards">Shuffle</button>
+
         <div class="row" data-bind="foreach: cards">
-            <div class="col-xs-12 col-sm-6 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-6 col-sm-4 col-md-3 card-container">
                 <div class="card">
                     <div class="front">
                         <img class="img-responsive" data-bind="attr: { src: photo }" alt="?" />

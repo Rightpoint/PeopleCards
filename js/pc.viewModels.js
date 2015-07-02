@@ -123,3 +123,6 @@ pc.viewModels.CardList.prototype.loadCardBehavior = function(selector){
       var $cards = $(selector);
     $cards.flip();
 };
+pc.viewModels.CardList.prototype.shuffleCards = function(){
+    this.cards(pc.common.shuffle(this.cards()));
+};

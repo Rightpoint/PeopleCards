@@ -3,7 +3,6 @@ body{
 }
 .card-list .card {
     height: 200px;
-    /*width: 300px;*/
     overflow-y: hidden;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -24,5 +23,12 @@ body{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    background-color: gainsboro;
+    color: #fff;
+    padding: 10px;
+}
+.card-list .card-container:nth-child(odd) .back {
+    background-color: #353432;
+}
+.card-list .card-container:nth-child(even) .back {
+    background-color: #e74a1f;
 }
