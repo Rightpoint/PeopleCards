@@ -2,7 +2,7 @@ body{
     background-image: url('../images/greybackground.png');
 }
 .card-list .card {
-    height: 200px;
+    height: 250px;
     overflow-y: hidden;
     margin-top: 15px;
     margin-bottom: 15px;

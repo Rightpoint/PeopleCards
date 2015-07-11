@@ -7,98 +7,36 @@ pc.viewModels.CardList = function (){
         var deferred = $.Deferred();
 
         var data = [
-            {
-                name: 'Dan Costanzo',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Dan%20Costanzo.jpg'
-            },
-            {
-                name: 'Gina Lee',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Gina%20Lee.jpg',
-            },
-            {
-                name: 'Tom Keuten',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Tom%20Keuten.jpg'
-            },
-            {
-                name: 'Krystal Blesi',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Krystal%20Blesi.jpg'
-            },
-            {
-                name: 'Tim Alvis',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Tim%20Alvis.jpg'
-            },
-            {
-                name: 'Austin Smith',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Austin%20Smith.jpg'
-            },
-            {
-                name: 'Leslie Lockett',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Leslie%20Lockett.jpg'
-            },
-            {
-                name: 'Rob Mayer',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Rob%20Mayer.jpg'
-            },
-            {
-                name: 'Dave Domm',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/David%20Domm.jpg'
-            },
-            {
-                name: 'Laurel Petty',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Laurel%20Petty.jpg'
-            },
-            {
-                name: 'Jordan Magenta',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Jordan%20Magenta.jpg'
-            },
-            {
-                name: 'Jimmy Hopton',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Jimmy%20Hopton.jpg'
-            },
-            {
-                name: 'Carlee Wolfe',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Carlee%20Wolfe.jpg'
-            },
-            {
-                name: 'Steve Dykstra',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Steve%20Dykstra.jpg'
-            },
-            {
-                name: 'Gautam Jaiswal',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Gautam%20Jaiswal.jpg'
-            },
-            {
-                name: 'Jay Mueller',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Jay%20Mueller.jpg'
-            },
-            {
-                name: 'Barbara Kubas',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Barbara%20Kubas.jpg'
-            },
-            {
-                name: 'Syed Belgam',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Syed%20Belgam.jpg'
-            },
-            {
-                name: 'Nick Carlson',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Nick%20Carlson.jpg'
-            },
-            {
-                name: 'Lindsey Woolmington',
-                photo: 'https://ipoint.rightpoint.com/Announcements/Lists/Photos/Lindsey%20Woolmington.jpg'
-            },
-            {
-                name: 'Ram Kota',
-                photo: 'https://ipoint.rightpoint.com/Company%20Photos/Employee%20Photos/Ram%20Kota.jpg'
-            },
-            {
-                name: 'Andy Bateman',
-                photo: 'https://ipoint.rightpoint.com/Company%20Photos/Employee%20Photos/Andy%20Bateman.jpg'
-            },
-            {
-                name: 'Brian Mansfield',
-                photo: 'https://ipoint.rightpoint.com/Company%20Photos/Employee%20Photos/Brian%20Mansfield.jpg'
-            }
+            {name:"Gina Lee",office:"Chicago",serviceLine:"Creative",photo:"images/people/GinaLee.jpg"},
+            {name:"Dan Costanzo",office:"Chicago",serviceLine:"BD",photo:"images/people/DanCostanzo.jpg"},
+            {name:"Krystal Blesi",office:"Chicago",serviceLine:"Salesforce",photo:"images/people/KrystalBlesi.jpg"},
+            {name:"Austin Smith",office:"Chicago",serviceLine:"Creative",photo:"images/people/AustinSmith.jpg"},
+            {name:"Tim Alvis",office:"Chicago",serviceLine:"App Dev",photo:"images/people/TimAlvis.jpg"},
+            {name:"Tom Keuten",office:"Michigan",serviceLine:"BD",photo:"images/people/TomKeuten.jpg"},
+            {name:"Rob Mayer",office:"Chicago",serviceLine:"Client Partner",photo:"images/people/RobMayer.jpg"},
+            {name:"Leslie Lockett",office:"Michigan",serviceLine:"Ops",photo:"images/people/LeslieLockett.jpg"},
+            {name:"Syed Belgam",office:"Chicago",serviceLine:"Managed Services",photo:"images/people/SyedBelgam.jpg"},
+            {name:"Barbara Kubas",office:"Chicago",serviceLine:"App Dev",photo:"images/people/BarbaraKubas.jpg"},
+            {name:"Jay Mueller",office:"Chicago",serviceLine:"Client Partner",photo:"images/people/JayMueller.jpg"},
+            {name:"Gautam Jaiswal",office:"Chicago",serviceLine:"App Dev",photo:"images/people/GautamJaiswal.jpg"},
+            {name:"Steve Dykstra",office:"Michigan",serviceLine:"PMO",photo:"images/people/SteveDykstra.jpg"},
+            {name:"Carlee Wolfe",office:"Chicago",serviceLine:"Change Management",photo:"images/people/CarleeWolfe.jpg"},
+            {name:"Jimmy Hopton",office:"Chicago",serviceLine:"Creative",photo:"images/people/JimmyHopton.jpg"},
+            {name:"Jordan Magenta",office:"Chicago",serviceLine:"Agency/Marketing",photo:"images/people/JordanMagenta.jpg"},
+            {name:"Laurel Petty",office:"Chicago",serviceLine:"Creative",photo:"images/people/LaurelPetty.jpg"},
+            {name:"Dave Domm",office:"Chicago",serviceLine:"Spark",photo:"images/people/DavidDomm.jpg"},
+            {name:"Nick Carlson",office:"Chicago",serviceLine:"SharePoint",photo:"images/people/NickCarlson.jpg"},
+            {name:"Lindsey Woolmington",office:"Denver",serviceLine:"SharePoint",photo:"images/people/LindseyWoolmington.jpg"},
+            {name:"Ram Kota",office:"Chicago",serviceLine:"App Dev",photo:"images/people/RamKota.jpg"},
+            {name:"Andy Bateman",office:"Chicago",serviceLine:"App Dev",photo:"images/people/AndyBateman.jpg"},
+            {name:"Brian Mansfield",office:"Chicago",serviceLine:"Salesforce",photo:"images/people/BrianMansfield.jpg"},
+            {name:"Darren Berry",office:"Michigan",serviceLine:"Managed Services",photo:"images/people/DarrenBerry.jpg"},
+            {name:"Adam Burton",office:"Chicago",serviceLine:"Digital Strategy",photo:"images/people/AdamBurton.jpg"},
+            {name:"Suman Kamath",office:"Denver",serviceLine:"PMO",photo:"images/people/SumanKamath.jpg"},
+            {name:"Scott Rojas",office:"Chicago",serviceLine:"PMO",photo:"images/people/ScottRojas.jpg"},
+            {name:"Rich Grenwick",office:"Michigan",serviceLine:"App Dev",photo:"images/people/RichGrenwick.jpg"},
+            {name:"Sanjeev Karmacharya",office:"Chicago",serviceLine:"App Dev",photo:"images/people/SanjeevKarmacharya.jpg"},
+            {name:"Sreeni Amrutur",office:"Michigan",serviceLine:"SharePoint",photo:"images/people/SreeniAmrutur.jpg"},
         ];
 
         setTimeout(function(){
