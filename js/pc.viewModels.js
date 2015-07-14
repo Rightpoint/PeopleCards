@@ -43,7 +43,7 @@ pc.viewModels.CardList = function (){
             {name:"John Ingraffia",office:"Chicago",serviceLine:"SharePoint",photo:"images/people/JohnIngraffia.jpg"},
             {name:"Aja Shamblee",office:"Chicago",serviceLine:"Creative",photo:"images/people/AjaShamblee.jpg"},
             {name:"Victoria Nahas",office:"Chicago",serviceLine:"Recruiter",photo:"images/people/VictoriaNahas.jpg"},
-            {name:"Owen Craig",office:"Chicago",serviceLine:"Recruiter",photo:"images/people/OwenCraig.jpg"},
+            {name:"Owen Craig",office:"Chicago",serviceLine:"App Dev",photo:"images/people/OwenCraig.jpg"},
             {name:"Alex Swarthout",office:"Chicago",serviceLine:"Delivery Support",photo:"images/people/AlexSwarthout.jpg"},
             {name:"Miles Heaton",office:"Chicago",serviceLine:"Managed Services",photo:"images/people/MilesHeaton.jpg"},
             {name:"Jeff Small",office:"Chicago",serviceLine:"PMO",photo:"images/people/JeffSmall.jpg"},
