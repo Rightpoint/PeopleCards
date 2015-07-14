@@ -13,7 +13,7 @@ pc.viewModels.CardList = function (){
             {name:"Austin Smith",office:"Chicago",serviceLine:"Creative",photo:"images/people/AustinSmith.jpg"},
             {name:"Tim Alvis",office:"Chicago",serviceLine:"App Dev",photo:"images/people/TimAlvis.jpg"},
             {name:"Tom Keuten",office:"Michigan",serviceLine:"BD",photo:"images/people/TomKeuten.jpg"},
-            {name:"Rob Mayer",office:"Chicago",serviceLine:"Client Partner",photo:"images/people/RobMayer.jpg"},
+            {name:"Rob Mayer",office:"Chicago",serviceLine:"Alliances/BD",photo:"images/people/RobMayer.jpg"},
             {name:"Leslie Lockett",office:"Michigan",serviceLine:"Ops",photo:"images/people/LeslieLockett.jpg"},
             {name:"Syed Belgam",office:"Chicago",serviceLine:"Managed Services",photo:"images/people/SyedBelgam.jpg"},
             {name:"Barbara Kubas",office:"Chicago",serviceLine:"App Dev",photo:"images/people/BarbaraKubas.jpg"},
@@ -37,6 +37,16 @@ pc.viewModels.CardList = function (){
             {name:"Rich Grenwick",office:"Michigan",serviceLine:"App Dev",photo:"images/people/RichGrenwick.jpg"},
             {name:"Sanjeev Karmacharya",office:"Chicago",serviceLine:"App Dev",photo:"images/people/SanjeevKarmacharya.jpg"},
             {name:"Sreeni Amrutur",office:"Michigan",serviceLine:"SharePoint",photo:"images/people/SreeniAmrutur.jpg"},
+            {name:"Rebecca Steurer",office:"Chicago",serviceLine:"UX",photo:"images/people/RebeccaSteurer.jpg"},
+            {name:"Sarah Derry",office:"Chicago",serviceLine:"Marketing",photo:"images/people/SarahDerry.jpg"},
+            {name:"Emily Olson",office:"Chicago",serviceLine:"App Dev",photo:"images/people/EmilyOlson.jpg"},
+            {name:"John Ingraffia",office:"Chicago",serviceLine:"SharePoint",photo:"images/people/JohnIngraffia.jpg"},
+            {name:"Aja Shamblee",office:"Chicago",serviceLine:"Creative",photo:"images/people/AjaShamblee.jpg"},
+            {name:"Victoria Nahas",office:"Chicago",serviceLine:"Recruiter",photo:"images/people/VictoriaNahas.jpg"},
+            {name:"Owen Craig",office:"Chicago",serviceLine:"Recruiter",photo:"images/people/OwenCraig.jpg"},
+            {name:"Alex Swarthout",office:"Chicago",serviceLine:"Delivery Support",photo:"images/people/AlexSwarthout.jpg"},
+            {name:"Miles Heaton",office:"Chicago",serviceLine:"Managed Services",photo:"images/people/MilesHeaton.jpg"},
+            {name:"Jeff Small",office:"Chicago",serviceLine:"PMO",photo:"images/people/JeffSmall.jpg"},
         ];
 
         setTimeout(function(){
