@@ -14,7 +14,7 @@ pc.viewModels.CardList = function (){
             {name:"Tim Alvis",office:"Chicago",serviceLine:"App Dev",photo:"images/people/TimAlvis.jpg"},
             {name:"Tom Keuten",office:"Michigan",serviceLine:"BD",photo:"images/people/TomKeuten.jpg"},
             {name:"Rob Mayer",office:"Chicago",serviceLine:"Alliances/BD",photo:"images/people/RobMayer.jpg"},
-            {name:"Leslie Lockett",office:"Michigan",serviceLine:"Ops",photo:"images/people/LeslieLockett.jpg"},
+            {name:"Leslie Lockett",office:"Michigan",serviceLine:"Delivery Support",photo:"images/people/LeslieLockett.jpg"},
             {name:"Syed Belgam",office:"Chicago",serviceLine:"Managed Services",photo:"images/people/SyedBelgam.jpg"},
             {name:"Barbara Kubas",office:"Chicago",serviceLine:"App Dev",photo:"images/people/BarbaraKubas.jpg"},
             {name:"Jay Mueller",office:"Chicago",serviceLine:"Client Partner",photo:"images/people/JayMueller.jpg"},
@@ -47,6 +47,11 @@ pc.viewModels.CardList = function (){
             {name:"Alex Swarthout",office:"Chicago",serviceLine:"Delivery Support",photo:"images/people/AlexSwarthout.jpg"},
             {name:"Miles Heaton",office:"Chicago",serviceLine:"Managed Services",photo:"images/people/MilesHeaton.jpg"},
             {name:"Jeff Small",office:"Chicago",serviceLine:"PMO",photo:"images/people/JeffSmall.jpg"},
+            {name:"Craig Browder",office:"Chicago",serviceLine:"App Dev",photo:"images/people/CraigBrowder.jpg"},
+            {name:"Chris Fitzsimonds",office:"Michigan",serviceLine:"App Dev",photo:"images/people/ChristianFitzsimonds.jpg"},
+            {name:"Shweta Singh",office:"Chicago",serviceLine:"App Dev",photo:"images/people/NoPhoto.jpg"},
+            {name:"Joel Kienitz",office:"Chicago",serviceLine:"App Dev",photo:"images/people/NoPhoto.jpg"},
+            {name:"Angelo Georgiou",office:"Chicago",serviceLine:"PMO",photo:"images/people/NoPhoto.jpg"},
         ];
 
         setTimeout(function(){
