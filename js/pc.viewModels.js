@@ -52,6 +52,7 @@ pc.viewModels.CardList = function (){
             {name:"Shweta Singh",office:"Chicago",serviceLine:"App Dev",photo:"images/people/NoPhoto.jpg"},
             {name:"Joel Kienitz",office:"Chicago",serviceLine:"App Dev",photo:"images/people/NoPhoto.jpg"},
             {name:"Angelo Georgiou",office:"Chicago",serviceLine:"PMO",photo:"images/people/NoPhoto.jpg"},
+            {name:"Jaime Velez",office:"Chicago",serviceLine:"SharePoint",photo:"images/people/JaimeVelez.jpg"},
         ];
 
         setTimeout(function(){
