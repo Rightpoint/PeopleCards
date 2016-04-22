@@ -1,0 +1,24 @@
+﻿<div class="container card-list">
+
+    <h1 class="header">New Hire Flashcards</h1>
+    <button class="btn btn-primary" data-bind="click: shuffleCards">Shuffle</button>
+    <select data-bind="options: offices, value: selectedOffice"></select>
+    <select data-bind="options: serviceLines, value: selectedServiceLine"></select>
+    <select data-bind="options: origins, value: selectedOrigin"></select>
+
+    <div class="row" data-bind="foreach: cards">
+        <div class="col-xs-12 col-sm-6 col-sm-4 col-md-3 card-container">
+            <div class="card">
+                <div class="front">
+                    <!-- style="height: 250px; width: 263px;" -->
+                    <img class="img-responsive" data-bind="attr: { src: photo }" alt="?" />
+                </div>
+                <div class="back">
+                    <h2 data-bind="text: name"></h2>
+                    <p data-bind="text: serviceLine"></p>
+                    <p data-bind="text: office"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
