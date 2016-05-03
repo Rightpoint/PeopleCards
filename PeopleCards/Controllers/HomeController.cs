@@ -9,7 +9,7 @@ namespace PeopleCards.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Meet the New Hires";
+            ViewBag.Title = "Meet your coworkers";
 
             return View();
         }
