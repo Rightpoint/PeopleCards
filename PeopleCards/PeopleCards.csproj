@@ -306,6 +306,7 @@
     <Content Include="Content\Images\people\Dan Costanzo.jpg" />
     <Content Include="Content\Images\people\DanCostanzo.jpg" />
     <Content Include="Content\Images\people\Daniel Marushka.jpg" />
+    <Content Include="Content\Images\people\DanielNedelcu.jpg" />
     <Content Include="Content\Images\people\Darren Berry.jpg" />
     <Content Include="Content\Images\people\DarrenBerry.jpg" />
     <Content Include="Content\Images\people\Dave McChristie.jpg" />
@@ -529,12 +530,14 @@
     <Content Include="Content\Images\people\Sarah Umber.JPG" />
     <Content Include="Content\Images\people\Sarah Wallace.JPG" />
     <Content Include="Content\Images\people\SarahDerry.jpg" />
+    <Content Include="Content\Images\people\SarveshJain.jpg" />
     <Content Include="Content\Images\people\Scot Goodhart Pic.JPG" />
     <Content Include="Content\Images\people\Scott Hamilton.JPG" />
     <Content Include="Content\Images\people\Scott Rojas.jpg" />
     <Content Include="Content\Images\people\ScottRojas.jpg" />
     <Content Include="Content\Images\people\Sean Sartell.JPG" />
     <Content Include="Content\Images\people\Shweta Singh.jpg" />
+    <Content Include="Content\Images\people\SimonSmith.jpg" />
     <Content Include="Content\Images\people\Sona Allen.JPG" />
     <Content Include="Content\Images\people\Sreeni.jpg" />
     <Content Include="Content\Images\people\SreeniAmrutur.jpg" />
@@ -563,6 +566,7 @@
     <Content Include="Content\Images\people\Tim Seifert.jpg" />
     <Content Include="Content\Images\people\Tim Stahl.jpg" />
     <Content Include="Content\Images\people\TimAlvis.jpg" />
+    <Content Include="Content\Images\people\TJSugnet.jpg" />
     <Content Include="Content\Images\people\Tom Keuten.jpg" />
     <Content Include="Content\Images\people\Tom White.jpg" />
     <Content Include="Content\Images\people\TomKeuten.jpg" />
