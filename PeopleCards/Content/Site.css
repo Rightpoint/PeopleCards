@@ -74,9 +74,16 @@ textarea {
     -moz-transform-style: preserve-3d; /** fixes non transitive 3d from parent and child https://jsfiddle.net/umaar/HYaRA/ **/
     transform-style: preserve-3d;
 }
-.card-list .card-container:nth-child(odd) .back {
+/*.card-list .card-container:nth-child(odd) .back {
     background-color: #353432;
 }
 .card-list .card-container:nth-child(even) .back {
+    background-color: #e74a1f;
+}*/
+
+.back-oasis {
+    background-color: #353432;
+}
+.back-rightpoint {
     background-color: #e74a1f;
 }

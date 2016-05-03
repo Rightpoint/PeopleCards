@@ -17,8 +17,8 @@
                     <!-- style="height: 250px; width: 263px;" -->
                     <img class="img-responsive" data-bind="attr: { src: photo }" alt="?" />
                 </div>
-                <div class="back">
-                    <h2 data-bind="text: name"></h2>
+                <div class="back" data-bind="css: backgroundColorStyle()">
+                    <h3 data-bind="text: name"></h3>
                     <p data-bind="text: serviceLine"></p>
                     <p data-bind="text: office"></p>
                     <p data-bind="text: origin"></p>

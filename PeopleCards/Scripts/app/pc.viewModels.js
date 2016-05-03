@@ -38,12 +38,12 @@ pc.viewModels.CardList = function (){
         var deferred = $.Deferred();
 
         var data = [
-            { name: "Aaron Starkston", office: "Chicago", serviceLine: "App Dev", photo: self.imagePath + "Aaron Starkston.JPG", origin: "Rightpoint" },
-            { name: "Adam Burton", office: "Chicago", serviceLine: "Digital Strategy", photo: self.imagePath + "AdamBurton.jpg", origin: "Rightpoint" },
-            { name: "Addam Wassel", office: "Detroit", serviceLine: "App Dev", photo: self.imagePath + "Addam Wassel.jpg", origin: "Rightpoint" },
-            { name: "Aditya	Mehra", office: "Chicago", serviceLine: "PMO", photo: self.imagePath + "Aditya Mehra.JPG", origin: "Rightpoint" },
+            { name: "Aaron Starkston", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "Aaron Starkston.JPG", origin: "Rightpoint" },
+            { name: "Adam Burton", office: "Chicago", serviceLine: "Strategy and Planning", photo: self.imagePath + "AdamBurton.jpg", origin: "Rightpoint" },
+            { name: "Addam Wassel", office: "Detroit", serviceLine: "Application Development", photo: self.imagePath + "Addam Wassel.jpg", origin: "Rightpoint" },
+            { name: "Aditya	Mehra", office: "Chicago", serviceLine: "Project Management", photo: self.imagePath + "Aditya Mehra.JPG", origin: "Rightpoint" },
             { name: "Adrian	Widjaja", office: "Chicago", serviceLine: "Salesforce", photo: self.imagePath + "Adrian Widjaja.jpg", origin: "Rightpoint" },
-            { name: "Aja Shamblee", office: "Chicago", serviceLine: "Creative", photo: self.imagePath + "AjaShamblee.jpg", origin: "Rightpoint" },
+            { name: "Aja Shamblee", office: "Chicago", serviceLine: "Visual Design", photo: self.imagePath + "AjaShamblee.jpg", origin: "Rightpoint" },
             { name: "Aleksandr Zebrov", office: "Chicago", serviceLine: "Managed Services", photo: self.imagePath + "Alex Zebrov.png", origin: "Rightpoint" },
             { name: "Alex Swarthout", office: "Chicago", serviceLine: "Delivery Support/Operations", photo: self.imagePath + "AlexSwarthout.jpg", origin: "Rightpoint" },
             { name: "Ali Quadri", office: "Chicago", serviceLine: "User Experience", photo: self.imagePath + "Ali Quadri.png", origin: "Rightpoint" },
@@ -104,7 +104,7 @@ pc.viewModels.CardList = function (){
             { name: "Gautam Jaiswal", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "GautamJaiswal.jpg", origin: "Rightpoint" },
             { name: "Gina Lee", office: "Chicago", serviceLine: "Visual Design", photo: self.imagePath + "GinaLee.jpg", origin: "Rightpoint" },
             { name: "Greg Ostrowski", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "Greg Ostrowski.JPG", origin: "Rightpoint" },
-            { name: "Hiren Patel", office: "Chicago", serviceLine: "Project Management", photo: self.imagePath + "Greg Ostrowski.JPG", origin: "Rightpoint" },
+            { name: "Hiren Patel", office: "Chicago", serviceLine: "Project Management", photo: self.imagePath + "Hiren Patel.JPG", origin: "Rightpoint" },
             { name: "Jaime Velez", office: "Chicago", serviceLine: "SharePoint", photo: self.imagePath + "JaimeVelez.jpg", origin: "Rightpoint" },
             { name: "James Mburu", office: "Chicago", serviceLine: "Business Intelligence", photo: self.imagePath + "James Mburu.jpg", origin: "Rightpoint" },
             { name: "James Mueller", office: "Chicago", serviceLine: "Client Partner", photo: self.imagePath + "JayMueller.jpg", origin: "Rightpoint" },
@@ -131,7 +131,6 @@ pc.viewModels.CardList = function (){
             { name: "Joe Meyer", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "Joe Meyer.JPG", origin: "Rightpoint" },
             { name: "Joel Kienitz", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "Joel Kienitz.jpg", origin: "Rightpoint" },
             { name: "John Ingraffia", office: "Chicago", serviceLine: "SharePoint", photo: self.imagePath + "JohnIngraffia.jpg", origin: "Rightpoint" },
-            { name: "John Purnell", office: "Chicago", serviceLine: "Project Management", photo: self.imagePath + "John Purnell.JPG", origin: "Rightpoint" },
             { name: "Jon Biere", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "Jon Biere.jpg", origin: "Rightpoint" },
             { name: "Jon Oestermeyer", office: "Chicago", serviceLine: "Cloud and Infrastructure", photo: self.imagePath + "Jon O.jpg", origin: "Rightpoint" },
             { name: "Jon Samp", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "Jon Samp.jpg", origin: "Rightpoint" },
@@ -240,7 +239,6 @@ pc.viewModels.CardList = function (){
             { name: "Tim Stahl", office: "Chicago", serviceLine: "Visual Design", photo: self.imagePath + "Tim Stahl.jpg", origin: "Rightpoint" },
             { name: "Tom Keuten", office: "Detroit", serviceLine: "Business Development", photo: self.imagePath + "TomKeuten.jpg", origin: "Rightpoint" },
             { name: "Vaiva Vaisnys", office: "Chicago", serviceLine: "Delivery Support/HR", photo: self.imagePath + "Vaiva Vaisnys.JPG", origin: "Rightpoint" },
-            { name: "Victoria Nahas", office: "Chicago", serviceLine: "Recruiter", photo: self.imagePath + "VictoriaNahas.jpg", origin: "Rightpoint" },
             { name: "Zach Quinn", office: "Chicago", serviceLine: "Cloud and Infrastructure", photo: self.imagePath + "Zach Quinn.jpg", origin: "Rightpoint" },
             { name: "Zachary Kelemen", office: "Chicago", serviceLine: "SharePoint", photo: self.imagePath + "Zack Kelemen.jpg", origin: "Rightpoint" },
 
@@ -370,10 +368,19 @@ pc.viewModels.CardList = function (){
             var i;
             var item;
 
+            var getBackgroundColorStyle = function () {
+                if (this.origin === "Rightpoint") {
+                    return "back-rightpoint";
+                }
+                return "back-oasis";
+            };
+
             var missingPhotos = [];
 
             for (i = 0; i < data.length; i++) {
                 item = data[i];
+
+                item.backgroundColorStyle = getBackgroundColorStyle;
 
                 if (item.photo.indexOf(self.noPhotoFile) > -1) {
                     missingPhotos.push(item.name + " - " + item.office);
