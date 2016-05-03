@@ -36,6 +36,11 @@ textarea {
     }
 }
 
+.image-container img{
+    width:100%;
+    height:auto;
+  }
+
 .card-list .card {
     height: 250px;
     overflow-y: hidden;
