@@ -58,6 +58,10 @@ textarea {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    -webkit-transform-style: preserve-3d; 
+    -moz-transform-style: preserve-3d; /** fixes non transitive 3d from parent and child https://jsfiddle.net/umaar/HYaRA/ **/
+    transform-style: preserve-3d;
 }
 .card-list .card .back {
     display: table-cell;
@@ -65,6 +69,10 @@ textarea {
     text-align: center;
     color: #fff;
     padding: 10px;
+
+    -webkit-transform-style: preserve-3d; 
+    -moz-transform-style: preserve-3d; /** fixes non transitive 3d from parent and child https://jsfiddle.net/umaar/HYaRA/ **/
+    transform-style: preserve-3d;
 }
 .card-list .card-container:nth-child(odd) .back {
     background-color: #353432;

@@ -9,8 +9,8 @@
         <button class="btn btn-secondary" data-bind="click: resetFilters">Clear Filters</button>
         <button class="btn btn-secondary" data-bind="click: unflipAll">Unflip All</button>
     </div>
-
-    <div class="row" data-bind="foreach: cards">
+    <div data-bind="visible: isProcessing">Loading...</div>
+    <div class="row" data-bind="foreach: cards, visible: !isProcessing()">
         <div class="col-xs-12 col-sm-6 col-sm-4 col-md-3 card-container">
             <div class="card">
                 <div class="front image-container">

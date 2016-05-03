@@ -32,6 +32,8 @@ pc.viewModels.CardList = function (){
     self.cardsAll = ko.observableArray([]);
     self.cards = ko.observableArray([]);
 
+    self.isProcessing = ko.observable(true);
+
     self.gettingData = function(){
         var deferred = $.Deferred();
 
@@ -190,7 +192,7 @@ pc.viewModels.CardList = function (){
             { name: "Nick Groos", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "Nick Groos.png", origin: "Rightpoint" },
             { name: "Nicole Lambiase", office: "Chicago", serviceLine: "Project Management", photo: self.imagePath + "Nicole Lambiase.jpg", origin: "Rightpoint" },
             { name: "Owen Craig", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "OwenCraig.jpg", origin: "Rightpoint" },
-            { name: "Paul Dain", office: "Chicago", serviceLine: "Client Partner", photo: self.imagePath + self.noPhotoFile, origin: "Rightpoint" },
+            { name: "Paul Dain", office: "Chicago", serviceLine: "Client Partner", photo: self.imagePath + "Paul Dain.jpg", origin: "Rightpoint" },
             { name: "Paul Hermany", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "Paul Hermany.jpg", origin: "Rightpoint" },
             { name: "Paul McAleer", office: "Denver", serviceLine: "User Experience", photo: self.imagePath + "Paul McAleer.JPG", origin: "Rightpoint" },
             { name: "Pernilla Peterson", office: "Chicago", serviceLine: "Visual Design", photo: self.imagePath + "Pernilla Peterson.JPG", origin: "Rightpoint" },
@@ -248,13 +250,11 @@ pc.viewModels.CardList = function (){
             { name: "Ariana Ross", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Ariana Ross.jpg", origin: "Oasis" },
             { name: "Benjamin Sewards", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Benjamin Sewards.jpg", origin: "Oasis" },
             { name: "Bill Gonzalez", office: "Boston", serviceLine: "Production", photo: self.imagePath + "Bill Gonzalez.jpg", origin: "Oasis" },
-            { name: "Brandon Lackey", office: "Dallas", serviceLine: "Development", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
+            { name: "Brandon Lackey", office: "Dallas", serviceLine: "Development", photo: self.imagePath + "Brandon Lackey.JPG", origin: "Oasis" },
             { name: "Brendan Pugh", office: "Boston", serviceLine: "Account Services", photo: self.imagePath + "Brendan Pugh.jpg", origin: "Oasis" },
-            { name: "Carolina Coviello", office: "Los Angeles", serviceLine: "Strategy & User Experience", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
-            { name: "Cassi Pires", office: "Los Angeles", serviceLine: "Account Services", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
-            { name: "Catherine Renehan", office: "Boston", serviceLine: "Production", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
-            { name: "Cerina Epple", office: "Los Angeles", serviceLine: "Strategy & User Experience", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
-            { name: "Charles Brooks", office: "Los Angeles", serviceLine: "Strategy & User Experience", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
+            { name: "Carolina Coviello", office: "Los Angeles", serviceLine: "Strategy & User Experience", photo: self.imagePath + "Carolina Coviello.jpg", origin: "Oasis" },
+            { name: "Cassi Pires", office: "Los Angeles", serviceLine: "Account Services", photo: self.imagePath + "Cassi Pires.jpg", origin: "Oasis" },
+            { name: "Catherine Renehan", office: "Boston", serviceLine: "Production", photo: self.imagePath + "Catherine Renehan.jpg", origin: "Oasis" },
             { name: "Chris Crombie", office: "Boston", serviceLine: "Sales & Marketing", photo: self.imagePath + "Chris Crombie.jpg", origin: "Oasis" },
             { name: "Christina Hunchard", office: "Boston", serviceLine: "Account Services", photo: self.imagePath + "Christina Hunchard.jpg", origin: "Oasis" },
             { name: "Christopher Daly", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Chris Daly.jpg", origin: "Oasis" },
@@ -278,7 +278,7 @@ pc.viewModels.CardList = function (){
             { name: "Jagmohan Rathore", office: "Jaipur, India", serviceLine: "Development", photo: self.imagePath + "Jagmohan Rathore.jpg", origin: "Oasis" },
             { name: "Jake DiMare", office: "Los Angeles", serviceLine: "Strategy & User Experience", photo: self.imagePath + "Jake DiMare.jpg", origin: "Oasis" },
             { name: "James Maconochie", office: "Boston", serviceLine: "Account Services", photo: self.imagePath + "James Maconochie.jpg", origin: "Oasis" },
-            { name: "Jamie Berman", office: "Dallas", serviceLine: "Account Services", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
+            { name: "Jamie Berman", office: "Dallas", serviceLine: "Account Services", photo: self.imagePath + "Jamie Berman.jpg", origin: "Oasis" },
             { name: "Jared Arnofsky", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Jared Arnofsky.png", origin: "Oasis" },
             { name: "Jason Fields", office: "Los Angeles", serviceLine: "Strategy & User Experience", photo: self.imagePath + "Jason Fields.jpg", origin: "Oasis" },
             { name: "Jeff Conway", office: "New York", serviceLine: "Strategy & User Experience", photo: self.imagePath + "Jeff Conway.jpg", origin: "Oasis" },
@@ -287,7 +287,6 @@ pc.viewModels.CardList = function (){
             { name: "Jonah Burstein", office: "Boston", serviceLine: "Account Services", photo: self.imagePath + "Jonah Burstein.jpg", origin: "Oasis" },
             { name: "Jonathan Lane", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Jonathan Lane.jpg", origin: "Oasis" },
             { name: "Josh Bates", office: "Boston", serviceLine: "Delivery Support", photo: self.imagePath + "Joshua Bates.jpg", origin: "Oasis" },
-            { name: "Josh Sostek", office: "Boston", serviceLine: "Development", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
             { name: "Justin Bradley", office: "Dallas", serviceLine: "Development", photo: self.imagePath + "Justin Bradley.jpg", origin: "Oasis" },
             { name: "Kapil Trivedi", office: "Jaipur, India", serviceLine: "Development", photo: self.imagePath + "Kapil Trivedi.jpg", origin: "Oasis" },
             { name: "Keith Murphy", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Keith Murphy.jpg", origin: "Oasis" },
@@ -327,14 +326,13 @@ pc.viewModels.CardList = function (){
             { name: "Simon Smith", office: "Boston", serviceLine: "Finance/HR", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
             { name: "Stephen Culp", office: "Atlanta", serviceLine: "Account Services", photo: self.imagePath + "Stephen Culp.JPG", origin: "Oasis" },
             { name: "Stephen Sobenko", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Steve Sobenko.jpg", origin: "Oasis" },
-            { name: "Terry Han", office: "Atlanta", serviceLine: "Development", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
+            { name: "Terry Han", office: "Atlanta", serviceLine: "Development", photo: self.imagePath + "Terry Han.jpg", origin: "Oasis" },
             { name: "Thomas O'Donnell", office: "Boston", serviceLine: "Production", photo: self.imagePath + "Thomas O'Donnell.jpg", origin: "Oasis" },
             //TODO Tim Khasanov.jpg ?
             { name: "Timothy Brown", office: "Boston", serviceLine: "Delivery Support", photo: self.imagePath + "Tim Brown.jpg", origin: "Oasis" },
             { name: "Timothy Seifert", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Tim Seifert.jpg", origin: "Oasis" },
             { name: "TJ Sugnet", office: "San Francisco", serviceLine: "Strategy & User Experience", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
             { name: "Tricia Perez", office: "Dallas", serviceLine: "QA", photo: self.imagePath + "Tricia Perez.jpg", origin: "Oasis" },
-            { name: "Ty Sharp", office: "Los Angeles", serviceLine: "Strategy & User Experience", photo: self.imagePath + self.noPhotoFile, origin: "Oasis" },
             { name: "Tyler Johnston", office: "Atlanta", serviceLine: "Development", photo: self.imagePath + "Tyler Johnston.JPG", origin: "Oasis" },
             { name: "Vadim Dolt", office: "Dallas", serviceLine: "Development", photo: self.imagePath + "Vadim Dolt.jpg", origin: "Oasis" },
             { name: "Vipin Banka", office: "Jaipur, India", serviceLine: "Development", photo: self.imagePath + "Vipin Banka.jpg", origin: "Oasis" },
@@ -347,6 +345,7 @@ pc.viewModels.CardList = function (){
         
         setTimeout(function(){
             deferred.resolve(data);
+            self.isProcessing(false);
         }, 0);
 
         return deferred.promise();
@@ -619,11 +618,6 @@ pc.viewModels.CardList = function (){
             self.selectedOrigin(selectedOrigin);
         }
 
-        if (self.origins().length === 2 && self.selectedOrigin() === self.textAll) {
-            self.origins([self.origins()[1]]);
-            self.selectedOrigin(self.origins()[0]);
-        }
-
         self.serviceLines([self.textAll]);
         ko.utils.arrayPushAll(self.serviceLines(), serviceLinesFiltered);
         self.serviceLines.valueHasMutated();
@@ -632,11 +626,6 @@ pc.viewModels.CardList = function (){
             self.selectedServiceLine(self.textAll);
         } else {
             self.selectedServiceLine(selectedServiceLine);
-        }
-
-        if (self.serviceLines().length === 2 && self.selectedServiceLine() === self.textAll) {
-            self.serviceLines([self.serviceLines()[1]]);
-            self.selectedServiceLine(self.serviceLines()[0]);
         }
 
         self.offices([self.textAnywhere]);
@@ -649,32 +638,39 @@ pc.viewModels.CardList = function (){
             self.selectedOffice(selectedOffice);
         }
 
-        if (self.offices().length === 2 && self.selectedOffice() === self.textAnywhere) {
-            self.offices([self.offices()[1]]);
-            self.selectedOffice(self.offices()[0]);
-        }
-
         self.isBuildingFilters = false;
     };
 
     self.isBuildingFilters = false;
 
     self.resetFilters = function () {
-        self.isBuildingFilters = true;
-        self.selectedServiceLine(self.textAll);
-        self.selectedOffice(self.textAnywhere);
-        self.selectedOrigin(self.textAll);
-        self.isBuildingFilters = false;
+        self.isProcessing(true);
 
-        self.applyFiltersFilters();
-        self.applyFiltersPeople();
+        setTimeout(function () {
+            self.isBuildingFilters = true;
+            self.selectedServiceLine(self.textAll);
+            self.selectedOffice(self.textAnywhere);
+            self.selectedOrigin(self.textAll);
+            self.isBuildingFilters = false;
+
+            self.applyFiltersFilters();
+            self.applyFiltersPeople();
+
+            self.isProcessing(false);
+        });
     };
 
     self.unflipAll = function () {
-        var filtered = self.cards().slice();
-        self.cards([]);
-        self.cards(filtered);
-        self.loadCardBehavior(self.classCard);
+        self.isProcessing(true);
+
+        setTimeout(function () {
+            var filtered = self.cards().slice();
+            self.cards([]);
+            self.cards(filtered);
+            self.loadCardBehavior(self.classCard);
+
+            self.isProcessing(false);
+        });
     };
 
     self.init = function () {
