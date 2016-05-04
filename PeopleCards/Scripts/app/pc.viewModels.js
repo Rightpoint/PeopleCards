@@ -6,6 +6,7 @@ pc.viewModels.CardList = function (){
     self.classCard = ".card";
 
     self.textTitle = "Meet your coworkers";
+    self.textSubtitle = "click on a face for more info";
     self.textAll = "All";
     self.textAnywhere = "Anywhere";
 
@@ -44,7 +45,7 @@ pc.viewModels.CardList = function (){
         var data = [
 
             { name: "David Hasselhoff", office: "Chicago", serviceLine: "Co-founder", photo: self.imagePath + "David Hasselhoff.jpg", origin: "Rightpoint" },
-            { name: "Fabio", office: "LA", serviceLine: "Co-founder", photo: self.imagePath + "Fabio.jpg", origin: "Oasis" },
+            { name: "Fabio", office: "Los Angeles", serviceLine: "Co-founder", photo: self.imagePath + "Fabio.jpg", origin: "Oasis" },
             { name: "Nic Cage", office: "Boston", serviceLine: "Co-founder", photo: self.imagePath + "Nic Cage.jpg", origin: "Oasis" },
 
             { name: "Aaron Starkston", office: "Chicago", serviceLine: "Application Development", photo: self.imagePath + "Aaron Starkston.JPG", origin: "Rightpoint" },
