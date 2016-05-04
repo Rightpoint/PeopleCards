@@ -1,7 +1,8 @@
 ﻿<div class="container card-list">
-
-    <h1 class="header" data-bind="text: textTitle"></h1>
-    <h4 data-bind="text: textSubtitle"></h4>
+    <div class="title-inline">
+        <h1 class="header" data-bind="text: textTitle"></h1>&nbsp;
+        <h4 data-bind="text: textSubtitle"></h4>
+    </div>
     <div class="form-group form-inline">
         <button class="btn btn-primary" data-bind="click: shuffleCards">Shuffle</button>
         <select class="form-control" data-bind="options: offices, value: selectedOffice"></select>
@@ -16,9 +17,9 @@
             <div class="card">
                 <div class="front image-container">
                     <!-- style="height: 250px; width: 263px;" -->
-                    <img class="img-responsive" data-bind="attr: { src: photo }" alt="?" />
+                    <img class="img-responsive" data-bind="attr: { src: photo, title: tooltip }"  alt="?" />
                 </div>
-                <div class="back" data-bind="css: backgroundColorStyle()">
+                <div class="back" data-bind="css: $data.backgroundColorStyle">
                     <h3 data-bind="text: name"></h3>
                     <p data-bind="text: serviceLine"></p>
                     <p data-bind="text: office"></p>

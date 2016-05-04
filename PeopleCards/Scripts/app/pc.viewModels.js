@@ -376,11 +376,33 @@ pc.viewModels.CardList = function (){
             var i;
             var item;
 
-            var getBackgroundColorStyle = function () {
-                if (this.origin === "Rightpoint") {
-                    return "back-rightpoint";
+            var setBackgroundColorStyle = function (item) {
+                if (item.origin === "Rightpoint") {
+                    item.backgroundColorStyle = "back-rightpoint";
                 }
-                return "back-oasis";
+                else {
+                    item.backgroundColorStyle = "back-oasis";
+                }
+            };
+
+            var bullet = "*";
+            var setTitleText = function (item) {
+
+                var k = 0;
+                var mask = "";
+                var title = " (Click me!)";
+                if (item && item.name) {
+                    var name = item.name;
+                    for (k = 0; k < name.length; k++) {
+                        if (name.charAt(k) === " ") {
+                            mask += " ";
+                        }
+                        else {
+                            mask += bullet;
+                        }
+                    }
+                    item.tooltip = mask + title;
+                }
             };
 
             var missingPhotos = [];
@@ -388,7 +410,8 @@ pc.viewModels.CardList = function (){
             for (i = 0; i < data.length; i++) {
                 item = data[i];
 
-                item.backgroundColorStyle = getBackgroundColorStyle;
+                setBackgroundColorStyle(item);
+                setTitleText(item);
 
                 if (item.photo.indexOf(self.noPhotoFile) > -1) {
                     missingPhotos.push(item.name + " - " + item.office);

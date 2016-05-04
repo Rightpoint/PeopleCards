@@ -87,3 +87,19 @@ textarea {
 .back-rightpoint {
     background-color: #e74a1f;
 }
+
+.title-inline>h1{
+  display:inline-block;
+}
+
+.title-inline>h2{
+  display:inline-block;
+}
+
+.title-inline>h4{
+  display:inline-block;
+}
+
+.title-inline>h3{
+  display:inline-block;
+}
