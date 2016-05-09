@@ -265,7 +265,6 @@ pc.viewModels.CardList = function (){
             { name: "Chris Crombie", office: "Boston", serviceLine: "Sales & Marketing", photo: self.imagePath + "Chris Crombie.jpg", origin: "Oasis" },
             { name: "Christina Hunchard", office: "Boston", serviceLine: "Account Services", photo: self.imagePath + "Christina Hunchard.jpg", origin: "Oasis" },
             { name: "Christopher Daly", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Chris Daly.jpg", origin: "Oasis" },
-            { name: "Colin Azeltine", office: "San Francisco", serviceLine: "Strategy & User Experience", photo: self.imagePath + "Colin Azeltine.jpg", origin: "Oasis" },
             { name: "Craig Kublin", office: "Boston", serviceLine: "Production", photo: self.imagePath + "Craig Kublin.jpg", origin: "Oasis" },
             { name: "Dale Traxler", office: "Dallas", serviceLine: "Development", photo: self.imagePath + "Dale Traxler.jpg", origin: "Oasis" },
             { name: "Dan Allegrone", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Dan Allegrone.jpg", origin: "Oasis" },
@@ -335,7 +334,7 @@ pc.viewModels.CardList = function (){
             //Terry is an intern
             { name: "Terry Han", office: "Atlanta", serviceLine: "Development", photo: self.imagePath + "Terry Han.jpg", origin: "Oasis" },
             { name: "Thomas O'Donnell", office: "Boston", serviceLine: "Production", photo: self.imagePath + "Thomas O'Donnell.jpg", origin: "Oasis" },
-            //TODO Tim Khasanov.jpg ?
+            { name: "Tim Khasanov", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Tim Khasanov.jpg", origin: "Oasis" },
             { name: "Timothy Brown", office: "Boston", serviceLine: "Delivery Support", photo: self.imagePath + "Tim Brown.jpg", origin: "Oasis" },
             { name: "Timothy Seifert", office: "Boston", serviceLine: "Development", photo: self.imagePath + "Tim Seifert.jpg", origin: "Oasis" },
             { name: "TJ Sugnet", office: "San Francisco", serviceLine: "Strategy & User Experience", photo: self.imagePath + "TJ Sugnet.jpg", origin: "Oasis" },
